@@ -28,4 +28,6 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jandres-vega)
 [![Andes vega's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=Andrebass)](https://github.com/anuraghazra/github-readme-stats)
 </div>
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
