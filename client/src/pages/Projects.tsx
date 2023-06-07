@@ -1,8 +1,9 @@
 import React from 'react';
+import {CardProject} from "../components/CardProject.tsx";
 const Projects:React.FC = () => {
     return (
-        <div>
-            <h1>Aqui van los proyectos</h1>
+        <div >
+            <CardProject />
         </div>
     );
 };
