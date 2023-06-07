@@ -1,5 +1,5 @@
 import React from 'react';
-// import {NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {listNavBar} from '../utils/infoLinks.ts';
 const NavBar:React.FC = () => {
     //const styleActive = "underline underline-offset-4"
@@ -9,7 +9,7 @@ const NavBar:React.FC = () => {
                 {
                     listNavBar.map(item => (
                         <li className="font-semibold text-white cursor-pointer rounded-2xl px-2" key={item.id}>
-                            {item.link}
+                            <NavLink to={item.route}>{item.link}</NavLink>
                         </li>
                     ))
                 }

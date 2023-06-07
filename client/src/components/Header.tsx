@@ -1,6 +1,7 @@
 import React from 'react';
 import imgLogo from '../assets/logo-portafolio.png';
 import {NavBar} from "./NavBar.tsx";
+import {Link} from "react-router-dom";
 const Header: React.FC = () => {
     return (
         <header className="flex items-center justify-between px-40 bg-dark-blue">
@@ -11,7 +12,9 @@ const Header: React.FC = () => {
                 <NavBar />
             </div>
             <div className="mr-10">
-                <button className="text-white">Iniciar Sesion</button>
+                <Link to="/login">
+                    <button className="text-white">Iniciar Sesion</button>
+                </Link>
             </div>
         </header>
     );
