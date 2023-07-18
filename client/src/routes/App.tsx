@@ -9,6 +9,7 @@ import {Technologies} from "../pages/Technologies.tsx";
 import {Contact} from "../pages/Contact.tsx";
 import {NotFound} from "../pages/NotFound.tsx";
 import {Login} from "../pages/Login.tsx";
+import RegisterProject from "../pages/RegisterProject.tsx";
 const App: React.FC = () => {
     return (
         <HashRouter>
@@ -21,6 +22,7 @@ const App: React.FC = () => {
                     <Route path="/certificates" element={<Certificates />} />
                     <Route path="/technologies" element={<Technologies />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/register-project" element={<RegisterProject />} />
                     <Route path="*" element={<NotFound/>} />
                 </Routes>
             </Layout>

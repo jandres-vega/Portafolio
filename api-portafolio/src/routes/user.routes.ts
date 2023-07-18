@@ -1,9 +1,11 @@
-import {Request, Response, Router} from "express";
+import {Router} from "express";
+import controllerUser from "../controllers/user/POST/controller.user";
+import {validatorHandlers, Property} from "../middlewares/validator.handlers";
+import {schemaUser} from "../schemas/schema.user";
 
-const router: Router = Router();
-router.get('/', (req:Request, res:Response):void => {
-    res.send("Otra Hola mundo")
-})
+const router = Router();
+
+router.post('/',validatorHandlers(schemaUser, Property.body), controllerUser)
 
 export default router;
 

@@ -8,8 +8,9 @@ export default {
     colors: {
       'dark-blue': '#1D2A40',
       'white': '#FFFFFF',
-      'purple': '#50628D',
-      'red': '#880505'
+      'purple': '#5b6981',
+      'red': '#880505',
+      'gray': '#9799a1'
     },
     extend: {},
   },
