@@ -11,10 +11,14 @@ const LandingPage = () => {
                 <AboutMe />
             </div>
             <div className="flex mt-5 justify-center gap-6">
-                <CustomIcon className="text-5xl cursor-pointer" icon={FaFacebook} />
-                <CustomIcon className="text-5xl cursor-pointer" icon={FaInstagram} />
-                <CustomIcon className="text-5xl cursor-pointer" icon={FaLinkedin} />
-                <CustomIcon className="text-5xl cursor-pointer" icon={FaGithub} />
+                <CustomIcon className="text-5xl hover:scale-125" icon={FaFacebook} />
+                <CustomIcon className="text-5xl hover:scale-125" icon={FaInstagram} />
+                <a href="https://www.linkedin.com/in/jandres-vega/" target="_blank">
+                    <CustomIcon className="text-5xl hover:scale-125" icon={FaLinkedin} />
+                </a>
+                <a href="https://github.com/jandres-vega" target="_blank">
+                    <CustomIcon className="text-5xl hover:scale-125" icon={FaGithub} />
+                </a>
             </div>
         </>
     );
